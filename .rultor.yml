@@ -1,0 +1,19 @@
+architect:
+  - kerelape
+
+merge:
+  commanders:
+    - kerelape
+
+  script: |
+    npm i
+    npm run test
+
+release:
+  commanders:
+    - kerelape
+
+  script: |
+    npm i
+    npm run test
+    git commit -am "${tag}"
